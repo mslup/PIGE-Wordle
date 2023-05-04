@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# User defined
+ClassDiagram.cd
+WinApi_Task/
+RC*
+lab2*

@@ -141,7 +141,7 @@
     <ClInclude Include="wordle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="lab2.rc" />
+    <ResourceCompile Include="resource.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="winapi_lab\lab3.ico" />
