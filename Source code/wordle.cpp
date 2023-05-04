@@ -43,7 +43,7 @@ int wordle::run(int show_command)
 	return EXIT_SUCCESS;
 }
 
-const std::string wordle::srcfile_path = R"(.\Source code\Resources\Wordle.txt)";
+const std::string wordle::srcfile_path = R"(Resources\Wordle.txt)";
 const std::set<std::string> wordle::dictionary = wordle::load_dictionary();
 
 std::set<std::string> wordle::load_dictionary()

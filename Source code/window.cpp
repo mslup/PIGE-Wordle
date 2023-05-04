@@ -452,7 +452,7 @@ LRESULT keyboard_window::window_proc(UINT msg, WPARAM wParam, LPARAM lParam)
 			str = "easy\0";
 			break;
 		}
-		WritePrivateProfileStringA("WORDLE", "DIFFICULTY", str, ".\\Wordle.ini");
+		WritePrivateProfileStringA("WORDLE", "DIFFICULTY", str, "Resources\\Wordle.ini");
 	}
 	break;
 	default:
@@ -469,7 +469,7 @@ keyboard_window::keyboard_window(HINSTANCE hInst)
 
 	CHAR difficulty_setting[MAX_LOADSTRING];
 	GetPrivateProfileStringA("WORDLE", "DIFFICULTY",
-		"easy\0", (LPSTR)difficulty_setting, MAX_LOADSTRING, ".\\Wordle.ini");
+		"easy\0", (LPSTR)difficulty_setting, MAX_LOADSTRING, "Resources\\Wordle.ini");
 
 	if (strcmp(difficulty_setting, "easy\0") == 0)
 		difficulty = ID_DIFFICULTY_EASY;
